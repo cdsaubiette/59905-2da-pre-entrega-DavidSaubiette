@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0; /* Ensure no margin around the body */
+  margin: 0; /
 }
 
 /* Header */
@@ -66,6 +66,7 @@ header nav ul li {
 }
 
 /* Contenido del Main */
+
 h1 {
   color: #021c1e;
   font-size: 5rem;
@@ -111,57 +112,12 @@ footer {
   font-weight: bold;
 }
 
-/* estilos para tecnologias.html */
-.container-tec {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; 
-}
-
-.header-tec {
-  background-color: #75cbc9;
-  padding: 1rem;
-}
-
-.header-tec .navbar-nav {
-  display: flex;
-  flex-direction: row;
-}
-
-.header-tec .navbar-nav .nav-item {
-  margin-right: 1rem;
-}
-
-.header-tec .navbar-nav .links {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-tec {
-  text-align: center;
-}
-
-.main-section-img {
-  max-width: 10%;
-  border-radius: 50%;
-}
-
-
-.main-content img.avatar-img {
-  
-  height: auto;
-  border-radius: 50%;
-}
 
 /*Estilos para Tecnologia.HTML*/
+
+.titulo {
+  text-align: center;
+}
 
 .main-tec {
   display: grid;
@@ -177,19 +133,15 @@ footer {
   text-align: center; 
 }
 .progreso-images, .prox-images, .cursos-images {
-  display: flex; /* Usa flexbox para alinear las imágenes horizontalmente */
-  justify-content: center; /* Centra las imágenes horizontalmente */
-  flex-wrap:wrap; /* Permite que las imágenes se envuelvan en pantallas más pequeñas */
+  display: flex; 
+  justify-content: center; 
+  flex-wrap:wrap; 
 }
 
 .progreso img, .prox img, .cursos img {
-  width: 100px; /* Ajusta el tamaño de las imágenes según sea necesario */
-  height: auto; /* Mantiene la relación de aspecto */
-  margin: 2%; /* Espacio alrededor de las imágenes */
-}
-
-.proyects {
-  text-align: center;
+  width: 100px; 
+  height: auto; 
+  margin: 2%; 
 }
 
 .proyects img {
@@ -198,8 +150,25 @@ footer {
   border-radius: 1%;
 }
 
-.proyects p{
-  padding: 0 20%;
+/* estilos para proyectos.html*/
+
+.titulo {
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 1rem; 
+
+}
+
+.card{
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+}
+
+.no-bg {
+  background-color: transparent; 
 }
 
 
@@ -275,7 +244,12 @@ footer {
 }
 
 .main-tec {
-  grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+  grid-template-columns: 1fr; 
+}
+
+.col-md-4 {
+  flex: 0 0 100%; 
+  max-width: 100%;
 }
 
 
