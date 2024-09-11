@@ -1,0 +1,396 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font Classes */
+.poppins-thin { font-family: "Poppins", sans-serif; font-weight: 100; }
+.poppins-extralight { font-family: "Poppins", sans-serif; font-weight: 200; }
+.poppins-light { font-family: "Poppins", sans-serif; font-weight: 300; }
+.poppins-regular { font-family: "Poppins", sans-serif; font-weight: 400; }
+.poppins-medium { font-family: "Poppins", sans-serif; font-weight: 500; }
+.poppins-semibold { font-family: "Poppins", sans-serif; font-weight: 600; }
+.poppins-bold { font-family: "Poppins", sans-serif; font-weight: 700; }
+.poppins-extrabold { font-family: "Poppins", sans-serif; font-weight: 800; }
+.poppins-black { font-family: "Poppins", sans-serif; font-weight: 900; }
+
+/* body */
+body {
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Ensure no margin around the body */
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #75cbc9;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+.icons {
+  max-height: 25px;
+  border-radius: 2px;
+}
+
+.links {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+/* Contenido del Main */
+h1 {
+  color: #021c1e;
+  font-size: 5rem;
+  font-weight: 800;
+  padding: 2rem 1rem;
+}
+
+h2 {
+  color: #021c1e;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 2rem 1rem;
+}
+h3 {
+  color: #021c1e;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 1rem;
+}
+
+main p {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: justify;
+  margin: 1rem auto;
+  line-height: 1.5;
+}
+
+main img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 1rem auto;
+}
+
+/* Footer */
+footer {
+  background-color: #0394e8;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; 
+  font-weight: bold;
+}
+
+/* estilos para tecnologias.html */
+.container-tec {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+.header-tec {
+  background-color: #75cbc9;
+  padding: 1rem;
+}
+
+.header-tec .navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-tec .navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+
+.header-tec .navbar-nav .links {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-tec {
+  text-align: center;
+}
+
+.main-section-img {
+  max-width: 10%;
+  border-radius: 50%;
+}
+
+
+.main-content img.avatar-img {
+  
+  height: auto;
+  border-radius: 50%;
+}
+
+/*Estilos para Tecnologia.HTML*/
+
+.main-tec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1%; 
+  padding: 2%; 
+}
+
+.progreso, .prox, .cursos {
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  text-align: center; 
+}
+.progreso-images, .prox-images, .cursos-images {
+  display: flex; /* Usa flexbox para alinear las imágenes horizontalmente */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  flex-wrap:wrap; /* Permite que las imágenes se envuelvan en pantallas más pequeñas */
+}
+
+.progreso img, .prox img, .cursos img {
+  width: 100px; /* Ajusta el tamaño de las imágenes según sea necesario */
+  height: auto; /* Mantiene la relación de aspecto */
+  margin: 2%; /* Espacio alrededor de las imágenes */
+}
+
+.proyects {
+  text-align: center;
+}
+
+.proyects img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 1%;
+}
+
+.proyects p{
+  padding: 0 20%;
+}
+
+
+/* Media Queries */
+
+/* Estilos Mobile  */
+@media (max-width: 767px) {
+  .header-tec .navbar-nav {
+    flex-direction: column;
+  }
+
+  .header-tec .navbar-nav .nav-item {
+    margin: 0.5rem 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 0.8rem;
+    margin: 2rem;
+  }
+
+  form {
+    width: 100%;   
+    padding: 8%;
+  }
+  form h1{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  form input{
+    width: 100%;
+    margin: 0.5%;
+  }
+
+  form textarea{
+    width: 100%;
+    margin: 0.5%;
+  }
+
+  form #enviar {
+    background-color: #0093E9;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-content .text {
+    text-align: center;
+  }
+
+  .main-content .avatar-img {
+    margin-top: 1rem;
+  }
+}
+
+.main-section-img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.main-tec {
+  grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+}
+
+
+/* Estilos Tablets */
+
+@media (min-width: 768px) {
+  .icons {
+    max-height: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  main p {
+    font-size: 1rem;
+    margin: 2rem;
+  }
+
+  form {
+    width: 100%;   
+    padding: 8%;
+  }
+  form h1{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  form input{
+    width: 100%;
+    margin: 0.5%;
+  }
+
+  form textarea{
+    width: 100%;
+    margin: 0.5%;
+  }
+
+  form #enviar {
+    background-color: #0093E9;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .main-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content .text {
+    text-align: left;
+    margin-right: 2rem;
+  }
+
+  .main-content .avatar-img {
+    margin-top: 0;
+  }
+}
+
+/* Estilos Desktop */
+@media (min-width: 992px) {
+  header nav {
+    padding: 1rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  main p {
+    font-size: 1.125rem;
+  }
+
+  form {
+    width: 100%;   
+    padding: 8%;
+  }
+  form h1{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  form input{
+    width: 100%;
+    margin: 0.5%;
+  }
+
+  form textarea{
+    width: 100%;
+    margin: 0.5%;
+  }
+
+  form #enviar {
+    background-color: #0093E9;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .main-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-content .text {
+    max-width: 50%;
+  }
+
+  .main-content .avatar-img {
+    max-width: 40%;
+    height: auto;
+  }
+}
