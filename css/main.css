@@ -6,15 +6,7 @@
 }
 
 /* Font Classes */
-.poppins-thin { font-family: "Poppins", sans-serif; font-weight: 100; }
-.poppins-extralight { font-family: "Poppins", sans-serif; font-weight: 200; }
-.poppins-light { font-family: "Poppins", sans-serif; font-weight: 300; }
-.poppins-regular { font-family: "Poppins", sans-serif; font-weight: 400; }
-.poppins-medium { font-family: "Poppins", sans-serif; font-weight: 500; }
-.poppins-semibold { font-family: "Poppins", sans-serif; font-weight: 600; }
-.poppins-bold { font-family: "Poppins", sans-serif; font-weight: 700; }
 .poppins-extrabold { font-family: "Poppins", sans-serif; font-weight: 800; }
-.poppins-black { font-family: "Poppins", sans-serif; font-weight: 900; }
 
 /* body */
 body {
@@ -22,7 +14,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0; /
+  margin: 0;
+  font-size: 16px; /* Base font size for rem units */
 }
 
 /* Header */
@@ -50,7 +43,7 @@ header nav ul li {
 }
 
 .icons {
-  max-height: 25px;
+  max-height: 1.5rem; /* Adjusted to rem */
   border-radius: 2px;
 }
 
@@ -61,54 +54,54 @@ header nav ul li {
   font-weight: bold;
 }
 
-.links:hover {
-  text-decoration: underline;
-}
-
 /* Contenido del Main */
 
-h1 {
-  color: #021c1e;
-  font-size: 5rem;
-  font-weight: 800;
+h1{
+  text-align: center;
+  font-weight: 900;
   padding: 2rem 1rem;
 }
 
-h2 {
-  color: #021c1e;
-  font-size: 3rem;
-  font-weight: 700;
+h2{
+  text-align: center;
   padding: 2rem 1rem;
+  font-weight: 800;
 }
-h3 {
-  color: #021c1e;
-  font-size: 2rem;
+
+body section div div p{
   font-weight: 700;
-  padding: 2rem 1rem;
 }
+
+body section div div{
+  place-items: center;
+}
+
+.main {
+  position: relative;
+  padding: 2rem 1rem 1rem; 
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 6rem; 
+}
+
 
 main p {
-  display: block;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: justify;
-  margin: 1rem auto;
+  font-weight: 700; 
   line-height: 1.5;
 }
 
-main img {
-  display: block;
-  max-width: 50%;
-  height: auto;
-  margin: 1rem auto;
-}
 
 /* Footer */
 footer {
   background-color: #0394e8;
   text-align: center;
   padding: 1rem;
-  margin-top: auto; 
+  margin-top: auto;
   font-weight: bold;
 }
 
@@ -167,14 +160,19 @@ footer {
   background-color: transparent;
 }
 
+.card-img-top{
+  max-width: 40%  ;
+}
+
 .no-bg {
   background-color: transparent; 
 }
 
 
+
 /* Media Queries */
 
-/* Estilos Mobile  */
+/* Estilos Mobile */
 @media (max-width: 767px) {
   .header-tec .navbar-nav {
     flex-direction: column;
@@ -184,21 +182,22 @@ footer {
     margin: 0.5rem 0;
   }
 
-  h1 {
+  h1.devWeb {
     font-size: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    margin-top: 1rem; 
   }
 
-  h2{
+  .text h2 {
     font-size: 1.5rem;
   }
 
   main p {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     margin: 2rem;
   }
 
+  
   form {
     width: 100%;   
     padding: 8%;
@@ -253,20 +252,37 @@ footer {
 }
 
 
+
+  .avatar-img {
+    max-width: 12rem; 
+  }
+
+  .main {
+    padding: 2rem 1rem; 
+  }
+
+  .main-content {
+    grid-template-columns: 1fr; 
+  }
+
 /* Estilos Tablets */
 
 @media (min-width: 768px) {
   .icons {
-    max-height: 30px;
+    max-height: 1.875rem; 
   }
 
-  h1 {
+  h1.devWeb {
     font-size: 2rem;
   }
 
   main p {
     font-size: 1rem;
     margin: 2rem;
+  }
+
+  .avatar-img {
+    max-width: 15rem; 
   }
 
   form {
@@ -312,19 +328,19 @@ footer {
   }
 }
 
-/* Estilos Desktop */
 @media (min-width: 992px) {
-  header nav {
-    padding: 1rem 2rem;
-  }
-
-  h1 {
+  h1.devWeb {
     font-size: 2.5rem;
   }
 
   main p {
     font-size: 1.125rem;
   }
+
+  .avatar-img {
+    max-width: 25rem; 
+  }
+
 
   form {
     width: 100%;   
