@@ -69,30 +69,14 @@ h2{
 }
 
 body section div div p{
+  text-align: justify;
   font-weight: 700;
 }
 
-body section div div{
-  place-items: center;
-}
-
-.main {
-  position: relative;
-  padding: 2rem 1rem 1rem; 
-}
-
-.main-content {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 6rem; 
-}
-
-
-main p {
-  font-weight: 700; 
-  line-height: 1.5;
+.mx-auto {
+  display: flex;  
+  align-items: center; 
+  justify-content: center; 
 }
 
 
@@ -182,22 +166,6 @@ footer {
     margin: 0.5rem 0;
   }
 
-  h1.devWeb {
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin-top: 1rem; 
-  }
-
-  .text h2 {
-    font-size: 1.5rem;
-  }
-
-  main p {
-    font-size: 0.875rem;
-    margin: 2rem;
-  }
-
-  
   form {
     width: 100%;   
     padding: 8%;
