@@ -3,19 +3,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Permanent Marker";
+  font-weight: 400;
+  font-style: normal;
 }
-
-/* Font Classes */
-.poppins-extrabold { font-family: "Poppins", sans-serif; font-weight: 800; }
 
 /* body */
 body {
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 80%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-size: 16px; /* Base font size for rem units */
+  font-size: 16px; 
 }
 
 /* Header */
@@ -43,51 +43,62 @@ header nav ul li {
 }
 
 .icons {
-  max-height: 1.5rem; /* Adjusted to rem */
+  max-height: 1.5rem; 
   border-radius: 2px;
 }
 
 .links {
-  color: black;
+  
+  color: rgb(20, 20, 20);
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 0.3rem;
 }
 
 /* Contenido del Main */
 
 h1{
   text-align: center;
+  font-size: 4rem;
   font-weight: 900;
   padding: 2rem 1rem;
+  letter-spacing: 0.3rem;
 }
 
 h2{
   text-align: center;
+  font-size: 3.5rem;
   padding: 2rem 1rem;
   font-weight: 800;
+  letter-spacing: 1rem;
+}
+
+main section div, .row{
+  margin-top: 5%;
 }
 
 body section div div p{
   text-align: justify;
+  letter-spacing: 0.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
-.mx-auto {
-  display: flex;  
-  align-items: center; 
-  justify-content: center; 
+.avatar-img{
+  width: 100%;
 }
-
 
 /* Footer */
 footer {
   background-color: #0394e8;
+  letter-spacing: 0.7rem;
   text-align: center;
   padding: 1rem;
   margin-top: auto;
   font-weight: bold;
 }
+ 
 
 
 /*Estilos para Tecnologia.HTML*/
@@ -98,66 +109,142 @@ footer {
 
 .main-tec {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3 1fr); 
   gap: 1%; 
   padding: 2%; 
 }
 
+.main-section-img {
+  width: 30%;
+  border-radius: 50%;
+}
+
 .progreso, .prox, .cursos {
-  padding: 20px; 
-  border-radius: 8px; 
+  padding: 1%; 
+  border-radius: 1%; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   text-align: center; 
+  margin-bottom: 3%;
 }
+
 .progreso-images, .prox-images, .cursos-images {
   display: flex; 
   justify-content: center; 
-  flex-wrap:wrap; 
+  align-items: center;
 }
 
 .progreso img, .prox img, .cursos img {
-  width: 100px; 
+  width: 4rem; 
   height: auto; 
-  margin: 2%; 
+  margin: 1rem;
+
 }
 
-.proyects img {
-  max-width: 50%;
-  height: auto;
-  border-radius: 1%;
-}
+
 
 /* estilos para proyectos.html*/
 
 .titulo {
   text-align: center;
+  letter-spacing: 1rem;
 }
 
-.container {
-  margin-bottom: 1rem; 
-
+.link{
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
 }
-
 .card{
   border-radius: 8px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: transparent;
+  padding: 1rem;
 }
+
+
+
 
 .card-img-top{
   max-width: 40%  ;
+}
+.col-lg-6, .col-md-4, .py-5{
+  
+
 }
 
 .no-bg {
   background-color: transparent; 
 }
 
+.footer-proyectos{
+  margin-top: 3rem;
+}
 
+
+
+/* Estilos de contacto.html */
+
+
+form {
+  width: 50%;   
+}
+
+main div div form h1{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+form input{
+  width: 50%;
+  margin: 20%;
+}
+
+form textarea{
+  width: 50%;
+  margin: 20%;
+}
+
+form #enviar {
+  background-color: #0093E9;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.mx-auto {
+  display: flex;  
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+main div div li {
+  list-style: none;
+}
+
+main div div li a img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Estilo para Sobre-Mi*/
+
+.row div p{
+  text-align: center;
+}
+.row div p img{
+  width: 3%;
+}
 
 /* Media Queries */
 
 /* Estilos Mobile */
 @media (max-width: 767px) {
+  
   .header-tec .navbar-nav {
     flex-direction: column;
   }
@@ -166,10 +253,34 @@ footer {
     margin: 0.5rem 0;
   }
 
+  main section div div h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 2rem 1rem;
+    letter-spacing: 0.3rem;
+  }
+
+  main section div div h2{
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 2rem 1rem;
+    font-weight: 800;
+    letter-spacing: 1rem;
+  }
+
+  body section div div p{
+    text-align: justify;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
   form {
     width: 100%;   
-    padding: 8%;
+    padding: 10%;
   }
+
   form h1{
     text-align: center;
     text-transform: uppercase;
@@ -177,12 +288,12 @@ footer {
 
   form input{
     width: 100%;
-    margin: 0.5%;
+    margin: 1%;
   }
 
   form textarea{
     width: 100%;
-    margin: 0.5%;
+    margin: 1%;
   }
 
   form #enviar {
@@ -200,38 +311,21 @@ footer {
     text-align: center;
   }
 
-  .main-content .avatar-img {
-    margin-top: 1rem;
+  .main-content{
+    margin-top: 1rem;  
+  }
+
+  .progreso-images, .prox-images, .cursos-images {
+    display: inline-block; 
+    justify-content: center; 
+    align-items: center;
+  }
+
+  footer p{
+    font-size: 1rem;
   }
 }
 
-.main-section-img {
-  width: 30%;
-  border-radius: 50%;
-}
-
-.main-tec {
-  grid-template-columns: 1fr; 
-}
-
-.col-md-4 {
-  flex: 0 0 100%; 
-  max-width: 100%;
-}
-
-
-
-  .avatar-img {
-    max-width: 12rem; 
-  }
-
-  .main {
-    padding: 2rem 1rem; 
-  }
-
-  .main-content {
-    grid-template-columns: 1fr; 
-  }
 
 /* Estilos Tablets */
 
@@ -293,8 +387,11 @@ footer {
 
   .main-content .avatar-img {
     margin-top: 0;
+    
   }
 }
+
+/* Estilos Desktop */
 
 @media (min-width: 992px) {
   h1.devWeb {
@@ -305,50 +402,11 @@ footer {
     font-size: 1.125rem;
   }
 
-  .avatar-img {
-    max-width: 25rem; 
-  }
-
-
-  form {
-    width: 100%;   
-    padding: 8%;
-  }
-  form h1{
-    text-align: center;
-    font-size: 3rem;
-    text-transform: uppercase;
-  }
-
-  form input{
-    width: 100%;
-    margin: 0.5%;
-  }
-
-  form textarea{
-    width: 100%;
-    margin: 0.5%;
-  }
-
-  form #enviar {
-    background-color: #0093E9;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
   .main-content {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  .main-content .text {
-    max-width: 50%;
-  }
 
-  .main-content .avatar-img {
-    max-width: 40%;
-    height: auto;
-  }
 }
