@@ -182,7 +182,11 @@ Estilos para Tecnologia.HTML
 
 
 
-/* Estilos de contacto.html */
+/*
+---------------------------------
+Estilos de contacto.html 
+---------------------------------
+*/
 
 
 form {
@@ -218,18 +222,23 @@ form #enviar {
   justify-content: center; 
 }
 
-
 main div div li {
   list-style: none;
 }
 
-main div div li a img {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.contactame img{
+  display: block;
+  width: 30%;
+  margin: auto;
 }
 
-/* Estilo para Sobre-Mi*/
+
+
+/*
+---------------------------------
+Estilo para Sobre-Mi
+---------------------------------
+*/
 
 .row div p{
   text-align: center;
@@ -300,12 +309,18 @@ main div div li a img {
     text-transform: uppercase;
     font-weight: bold;
   }
+  main div div div p{
+    text-align: center;
+  }
+
+  .contactame img{
+    margin: 2rem;
+  }
+
   .titulo{
     font-size: 2rem;
   }
-  main section div div p{
-    text-align: center;
-  }
+ 
   .row div p img{
     width: 6%;
   }
