@@ -48,7 +48,6 @@ header nav ul li {
 }
 
 .links {
-  
   color: rgb(20, 20, 20);
   text-decoration: none;
   font-size: 1.5rem;
@@ -98,10 +97,12 @@ footer {
   margin-top: auto;
   font-weight: bold;
 }
- 
 
-
-/*Estilos para Tecnologia.HTML*/
+/* 
+------------------------------------------
+Estilos para Tecnologia.HTML
+-------------------------------------------
+*/
 
 .titulo {
   text-align: center;
@@ -142,7 +143,11 @@ footer {
 
 
 
-/* estilos para proyectos.html*/
+/* 
+-------------------------------------
+ estilos para proyectos.html
+ --------------------------------------
+ */
 
 .titulo {
   text-align: center;
@@ -163,15 +168,8 @@ footer {
   padding: 1rem;
 }
 
-
-
-
 .card-img-top{
   max-width: 40%  ;
-}
-.col-lg-6, .col-md-4, .py-5{
-  
-
 }
 
 .no-bg {
@@ -301,6 +299,15 @@ main div div li a img {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
+  }
+  .titulo{
+    font-size: 2rem;
+  }
+  main section div div p{
+    text-align: center;
+  }
+  .row div p img{
+    width: 6%;
   }
 
   .main-content {
