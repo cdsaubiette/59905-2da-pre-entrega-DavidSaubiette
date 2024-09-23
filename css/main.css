@@ -260,6 +260,10 @@ Estilo para Sobre-Mi
     margin: 0.5rem 0;
   }
 
+  header nav div div ul li li a, .links{
+    font-size: 0.9rem;
+  }
+
   main section div div h1{
     text-align: center;
     font-size: 2rem;
