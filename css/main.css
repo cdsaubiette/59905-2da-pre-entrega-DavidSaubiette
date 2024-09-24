@@ -120,7 +120,7 @@ Estilos para Tecnologia.HTML
   display: grid;
   grid-template-columns: repeat(3 1fr); 
   gap: 1%; 
-  padding: 2%; 
+  padding: %; 
 }
 
 .main-section-img {
@@ -408,6 +408,8 @@ Estilo para Sobre-Mi
     justify-content: center; 
     align-items: center;
   }
+
+  
 
   footer p{
     font-size: 1rem;
