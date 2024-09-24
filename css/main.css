@@ -53,7 +53,15 @@ header nav ul li {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 0.3rem;
+  transition: transform 0.3s; 
+  display: inline-block; 
 }
+
+.links:hover {
+  transform: scale(1.1); 
+}
+
+
 
 /* Contenido del Main */
 
@@ -121,11 +129,13 @@ Estilos para Tecnologia.HTML
 }
 
 .progreso, .prox, .cursos {
-  padding: 1%; 
+  width: 90%;
+  padding: 2%; 
   border-radius: 1%; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   text-align: center; 
-  margin-bottom: 3%;
+  margin:5%;
+  margin-bottom: 5%;
 }
 
 .progreso-images, .prox-images, .cursos-images {
@@ -240,12 +250,43 @@ Estilo para Sobre-Mi
 ---------------------------------
 */
 
+.iconos-nav {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 6rem; 
+}
+
+.iconos-nav ul {
+  list-style-type: none; 
+  display: flex; 
+}
+
+.iconos-nav li {
+  margin: 0 1rem; 
+}
+
+.iconos-nav img {
+  width: 120%; 
+  height: auto; 
+  transition: transform 0.5s; 
+}
+
+.iconos-nav img:hover {
+  transform: scale(1.1); 
+}
 .row div p{
   text-align: center;
 }
 .row div p img{
   width: 3%;
 }
+
+
+
+
+
+
 
 /* Media Queries */
 
@@ -263,6 +304,27 @@ Estilo para Sobre-Mi
   header nav div div ul li li a, .links{
     font-size: 0.9rem;
   }
+
+  .iconos-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.iconos-nav li {
+    margin: 0 1rem;
+}
+
+.iconos-nav img {
+    width: 120%; 
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.iconos-nav img:hover {
+    transform: scale(1.1);
+}
 
   main section div div h1{
     text-align: center;
@@ -356,6 +418,10 @@ Estilo para Sobre-Mi
 /* Estilos Tablets */
 
 @media (min-width: 768px) {
+
+  header nav div div ul li li a, .links{
+    font-size: 1.2rem;
+  }
   .icons {
     max-height: 1.875rem; 
   }
@@ -420,6 +486,10 @@ Estilo para Sobre-Mi
 /* Estilos Desktop */
 
 @media (min-width: 992px) {
+
+  header nav div div ul li li a, .links{
+    font-size: 1.8rem;
+  }
   h1.devWeb {
     font-size: 2.5rem;
   }
