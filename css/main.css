@@ -120,7 +120,7 @@ Estilos para Tecnologia.HTML
   display: grid;
   grid-template-columns: repeat(3 1fr); 
   gap: 1%; 
-  padding: %; 
+  padding: 1%; 
 }
 
 .main-section-img {
